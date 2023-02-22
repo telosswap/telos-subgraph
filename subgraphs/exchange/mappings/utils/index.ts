@@ -7,7 +7,7 @@ import { Factory as FactoryContract } from "../../generated/templates/Pair/Facto
 
 // TODO:
 export let ADDRESS_ZERO = "0x0000000000000000000000000000000000000000";
-export let FACTORY_ADDRESS = "0x69f3212344a38b35844cce4864c2af9c717f35e3";
+export let FACTORY_ADDRESS = "0xf3ddfb9cb7096a1d99e1ad24d3dd4411ca15d694";
 
 export let ZERO_BI = BigInt.fromI32(0);
 export let ONE_BI = BigInt.fromI32(1);
