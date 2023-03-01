@@ -3,8 +3,8 @@ import { BigDecimal, Address } from "@graphprotocol/graph-ts/index";
 import { Pair, Token, Bundle } from "../generated/schema";
 import { ZERO_BD, factoryContract, ADDRESS_ZERO, ONE_BD } from "./utils";
 // TODO:
-let WTLOS_ADDRESS = "0xfadbc0a9a30394055a90e9205dd470c6e794cd5a";
-let USDT_WTLOS_PAIR = "0x3108a4ec070fc51f74ce00cda009578d594e35b8"; // created block 648115
+let WTLOS_ADDRESS = "0xb881218cc91304ced86c80dc4576184a52e02f62";
+let USDT_WTLOS_PAIR = "0xbe59f845b8da50f830cfe67bde60889aea3f57db"; // created block 648115
 
 export function getBnbPriceInUSD(): BigDecimal {
   // fetch eth prices for each stablecoin
@@ -34,7 +34,7 @@ export function getBnbPriceInUSD(): BigDecimal {
 
 // tesnet
 let WHITELIST: string[] = [
-  "0xfadbc0a9a30394055a90e9205dd470c6e794cd5a", // WTLOS
+  "0xb881218cc91304ced86c80dc4576184a52e02f62", // WTLOS
   "0xd65e4e2a2ae7b773ac5e50dc84574f429169f832", // BUSD
   "0xb9746c6b50ad85833b062eb6b81245b9df0fd738", // USDT
   "0x104f1cd7caeda9a7aa5c0a416d14880aa0a8a7e3", // USDC

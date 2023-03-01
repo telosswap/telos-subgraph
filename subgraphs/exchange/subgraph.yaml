@@ -8,9 +8,9 @@ dataSources:
     name: Factory
     network: telos
     source:
-      address: "0xf3DdfB9cb7096A1d99E1Ad24d3Dd4411cA15D694"
+      address: "0x89e0b20984df9dd857ced59cd6eb33458381f37c"
       abi: Factory
-      startBlock: 220779351
+      startBlock: 221997178
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
