@@ -3,8 +3,8 @@ import { BigDecimal, Address } from "@graphprotocol/graph-ts/index";
 import { Pair, Token, Bundle } from "../generated/schema";
 import { ZERO_BD, factoryContract, ADDRESS_ZERO, ONE_BD } from "./utils";
 // TODO:
-let WTLOS_ADDRESS = "0xb881218cc91304ced86c80dc4576184a52e02f62";
-let USDT_WTLOS_PAIR = "0xbe59f845b8da50f830cfe67bde60889aea3f57db"; // created block 648115
+let WTLOS_ADDRESS = "0xd102ce6a4db07d247fcc28f366a623df0938ca9e";
+let USDT_WTLOS_PAIR = "0xc63720522207b0f39956ee035038a1a17c9fe9bf"; // created block 648115
 
 export function getBnbPriceInUSD(): BigDecimal {
   // fetch eth prices for each stablecoin
@@ -18,28 +18,20 @@ export function getBnbPriceInUSD(): BigDecimal {
 }
 // TODO:
 // token where amounts should contribute to tracked volume and liquidity
-// let WHITELIST: string[] = [
-//   "0xfadbc0a9a30394055a90e9205dd470c6e794cd5a", // WTLOS
-//   "0xc111c29a988ae0c0087d97b33c6e6766808a3bd3", // BUSD
-//   "0x01445c31581c354b7338ac35693ab2001b50b9ae", // USDT
-//   "0xe2c120f188ebd5389f71cf4d9c16d05b62a58993", // USDC
-//   "0x85219708c49aa701871ad330a94ea0f41dff24ca", // WETH
-//   // "0xcd7509b76281223f5b7d3ad5d47f8d7aa5c2b9bf", // USDV
-//   // "0xe3f5a90f9cb311505cd691a46596599aa1a0ad7d", // DAI
-//   // "0x639a647fbe20b6c8ac19e48e2de44ea792c62c5c", // WBTC
-//   // "0xabf26902fd7b624e0db40d31171ea9dddf078351", // WAGYU
-//   // "0x72eb7ca07399ec402c5b7aa6a65752b6a1dc0c27", // ASTRO
-//   // "0x6292d721d00bddaf683e1e64e4fcc9588c95398d", // ADA
-// ];
+let WHITELIST: string[] = [
+  "0xd102ce6a4db07d247fcc28f366a623df0938ca9e", // WTLOS
+  "0xefaeee334f0fd1712f9a8cc375f427d9cdd40d73", // USDT
+  "0x818ec0a7fe18ff94269904fced6ae3dae6d6dc0b", // USDC
+];
 
 // tesnet
-let WHITELIST: string[] = [
-  "0xb881218cc91304ced86c80dc4576184a52e02f62", // WTLOS
-  "0xd65e4e2a2ae7b773ac5e50dc84574f429169f832", // BUSD
-  "0xb9746c6b50ad85833b062eb6b81245b9df0fd738", // USDT
-  "0x104f1cd7caeda9a7aa5c0a416d14880aa0a8a7e3", // USDC
-  "0xe94afce6d42f27aaca09af470181de1965aa719b", // WETH
-];
+// let WHITELIST: string[] = [
+//   "0xb881218cc91304ced86c80dc4576184a52e02f62", // WTLOS
+//   "0xd65e4e2a2ae7b773ac5e50dc84574f429169f832", // BUSD
+//   "0xb9746c6b50ad85833b062eb6b81245b9df0fd738", // USDT
+//   "0x104f1cd7caeda9a7aa5c0a416d14880aa0a8a7e3", // USDC
+//   "0xe94afce6d42f27aaca09af470181de1965aa719b", // WETH
+// ];
 
 // minimum liquidity for price to get tracked
 let MINIMUM_LIQUIDITY_THRESHOLD_BNB = BigDecimal.fromString("10");
